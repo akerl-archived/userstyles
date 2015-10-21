@@ -1,60 +1,70 @@
-*{
-        font-family: sans-serif !important;
-    }
+td.title {
+    font-size: medium;
+}
 
-    td.title{
-        font-size: medium !important;
-    }
+a,
+a:link,
+.pagetop a,
+.pagetop a:visited {
+    color: #93A1A1;
+}
 
-    a{
-        color:#93A1A1 !important;
-    }
+td.default a,
+td.title a:link,
+span.comment a:link {
+    color: #2aa198;
+}
 
-    td.default a, td.title a:link, span.comment a:link{
-        color:#2aa198 !important;
-    }
+.comment,
+.c00 {
+    color: #93A1A1;
+}
 
-    .comment, .c00 {
-        color:#93A1A1 !important;
-    }
+.pagetop {
+    color: green;
+}
 
-    .pagetop {
-        color:green !important;
-    }
+font {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
 
-    font{
-        color:inherit !important;
-        font-family:inherit !important;
-        font-size:inherit !important;
-    }
+td.title a:visited,
+span.comment a:visited {
+    color: #b58900;
+}
 
-    td.title a:visited,  span.comment a:visited{
-        color:#b58900 !important;
-    }
+yclinks a,
+td.default span.comhead a,
+td.subtext a,
+td.subtext span {
+    color: #93a1a1;
+}
 
-    span.yclinks a, td.default span.comhead a, td.subtext a, td.subtext span{
-        color:#93a1a1 !important;
-    }
+td.default span.comhead a,
+td.subtext a {
+    font-weight: bold;
+}
 
-    td.default span.comhead a, td.subtext a{
-        font-weight: bold;
-    }
+body > center > table > tbody > tr:first-child > td {
+    background-color: #073642;
+}
 
-    body > center > table > tbody > tr:first-child > td{
-        background-color:#073642 !important;
-    }
+body,
+body > center > table {
+    background-color: #002b36;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    body, body > center > table{
-        background-color: #002b36 !important;
-        margin-left: auto;
-        margin-right: auto;
-    }
+code,
+pre {
+    color: #b58900;
+    background: #073642;
+}
 
-    code, pre{
-        color:#b58900 !important;
-        background:#073642 !important;
-    }
+a:hover {
+    background: #073642;
+}
 
-    a:hover{
-        background:#073642 !important;
-    }
