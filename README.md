@@ -15,7 +15,7 @@ I've modified it to tweak some colors and make comments have higher contrast
 
 Originally from [StylishThemes - GitHub Dark](https://userstyles.org/styles/37035/github-dark), licensed under CC BY-SA 4.0.
 
-Thus far, unmodified.
+Thus far, unmodified except for passing it through cssfmt.
 
 ## Adding a style
 
