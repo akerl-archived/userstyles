@@ -11,6 +11,12 @@ Originally from [Dark Hacker News - Solarized](https://userstyles.org/styles/926
 
 I've modified it to tweak some colors and make comments have higher contrast
 
+### github\_dark
+
+Originally from [StylishThemes - GitHub Dark](https://userstyles.org/styles/37035/github-dark), licensed under CC BY-SA 4.0.
+
+Thus far, unmodified.
+
 ## Adding a style
 
 Create a css file and run `make` to format it with [cssfmt](https://github.com/morishitter/cssfmt). You'll need to have cssfmt installed, which you can do with `npm install -g cssfmt`.
