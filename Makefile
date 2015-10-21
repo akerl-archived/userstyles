@@ -5,5 +5,5 @@ default: format
 format: *.css
 
 *.css:
-	cssfmt $@ $@
+	cssfmt $@
 
