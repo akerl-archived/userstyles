@@ -364,6 +364,7 @@
   .repository-sidebar,
   .blog-aside,
   .gist-sidebar {
+
     /*position: sticky !important;*/
     top: 8px !important;
   }
