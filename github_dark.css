@@ -1,5 +1,5 @@
-@-moz-document domain("render.githubusercontent.com"), domain("raw.githubusercontent.com"), regexp("^https?://((gist|guides|help|raw|status|developer).)?github.com((?!generated_pages/preview).)*$") {
-  /*! Github Dark Theme v1.14.22 (10/19/2015) */
+@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\.)?github\.com((?!generated_pages\/preview).)*$"), domain("render.githubusercontent.com"), domain("raw.githubusercontent.com") {
+  /*! Github Dark Theme v1.14.42 (1/16/2016) */
 
   /*
  * https://github.com/StylishThemes/GitHub-Dark
@@ -10,13 +10,12 @@
   /* AGENT_SHEET */
   body {
     background-color: #222 !important;
-    background-image: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==") !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==") !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
-    background-attachment: scroll !important;
-    background-repeat: repeat !important;
-    background-size: auto !important;
-    background-position: left top !important;
+    background-attachment: fixed !important;
+
+    /*[[bg-options]]*/
   }
 
   /* custom code font */
@@ -32,7 +31,7 @@
   #gist-form .file .input textarea,
   .ace_editor.ace-github-light,
   .ace_editor {
-    font-family: "Menlo", Monaco, Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    font-family: "/*[[font-choice]]*/", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
   }
 
   /* Base link/panel colors - text */
@@ -67,7 +66,6 @@
   a.browse-button:hover,
   a.browse-button:hover span,
   .team-mention,
-  a.octotree_opts:hover,
   .header .header-logo-invertocat:hover span,
   .comment-header-actions li:hover,
   .octofication .mega-octicon:before,
@@ -85,7 +83,6 @@
   .new-file-link span,
   .org-repo-name a:hover .repo-prefix,
   .timeline-commits .commit-meta .octicon-comment-discussion:before,
-  .numbers-summary a:hover .octicon:before,
   .steps li.current .mega-octicon:before,
   .oauth-permissions-details .permission-title,
   .permission-help .octicon:before,
@@ -109,9 +106,9 @@
   .panel-nav:not(.disabled) .mega-octicon:before,
   .team-info-card .stats-group .stat:hover,
   .team-info-card .stats-group .stat:hover .stat-number,
-  .octicon-btn:hover,
+  .btn-octicon:hover,
   a.discussion-item-entity:hover,
-  span.discussion-item-entity:hover,
+  .discussion-item-entity:hover,
   .issues-listing .table-list-issues .issue-comments-link:hover,
   .issues-listing .table-list-issues .issue-title-link:hover,
   .issues-listing .table-list-issues .issue-meta-section a:hover,
@@ -124,13 +121,13 @@
   .box-action:active,
   input[type="text"]:focus + .scope-badge,
   .repo-list-stats .repo-list-stat-item:hover,
-  .octotree_views .octotree_treeview .jstree-anchor,
-  .jstree-icon.tree::before,
   .octicon-file-directory,
   .branch-status-details,
   .notification-actions .btn-link:hover,
   a.discussion-item-toggle-open:hover,
   a.discussion-item-toggle-closed:hover,
+  button.discussion-item-toggle-open:hover,
+  button.discussion-item-toggle-closed:hover,
   .task-list a,
   .full-commit .btn.btn-outline:hover,
   .zeroclipboard-link,
@@ -162,8 +159,19 @@
   .gist-snippet-meta .gist-count-links > li > a:hover,
   .orgs-help-item-octicon .mega-octicon,
   .release-timeline-tags .expander-text:hover,
-  .muted-link:hover strong {
-    color: #4183C4 !important;
+  .muted-link:hover strong,
+  .ajax-pagination-btn,
+  .markdown-body a[href*="/labels/"],
+  .select-menu-action:hover,
+  .wiki-wrapper .wiki-history .commit-id:hover,
+  .milestone-title-link a:hover,
+  .octotree_views .octotree_treeview .jstree-anchor .jstree-icon.tree::before,
+  .octotree_github_sidebar a.octotree_toggle:hover,
+  .octotree_github_sidebar a.octotree_opts:hover,
+  .octotree_github_sidebar a.octotree_opts.selected,
+  .octotree_github_sidebar .octotree_views .octotree_treeview .jstree-anchor,
+  .milestone-name:hover {
+    color: #4183c4 !important;
   }
 
   /* Base color panel */
@@ -178,7 +186,6 @@
   .dashboard-tabs a:hover,
   .dropdown-menu > li > a:hover,
   .documentation-results a:hover,
-  input[type=submit]:hover,
   .hidden-text-expander a:hover,
   .dropdown-item:hover,
   .dropdown-item.zeroclipboard-is-hover,
@@ -203,11 +210,11 @@
   .search-result-item.navigation-focus,
   .gist-quicksearch-result.navigation-focus,
   .gist-snippet .link-overlay .link {
-    background: #4183C4 !important;
+    background: #4183c4 !important;
   }
 
   .context-button:after {
-    border-color: #4183C4 transparent transparent !important;
+    border-color: #4183c4 transparent transparent !important;
   }
 
   .octofication .message,
@@ -218,38 +225,38 @@
   .btn.btn-outline.zeroclipboard-is-hover,
   :checked + .radio-label,
   .gist-snippet .file-box:hover .file {
-    border-color: #4183C4 !important;
+    border-color: #4183c4 !important;
   }
 
   .header-nav-link:hover .dropdown-caret,
   .header-nav-link:focus .dropdown-caret {
-    border-top-color: #4183C4 !important;
+    border-top-color: #4183c4 !important;
   }
 
   .table-list .table-list-item.unread .table-list-cell-checkbox {
-    border-left-color: #4183C4 !important;
-    box-shadow: 2px 0px 0px #4183C4 inset !important;
+    border-left-color: #4183c4 !important;
+    box-shadow: 2px 0px 0px #4183c4 inset !important;
   }
 
   /* === Notification icon === */
   .notification-indicator .mail-status {
-    background-color: #4183C4 !important;
+    background: #4183c4 !important;
     border-color: #1d1d1d !important;
   }
 
   /* text selection */
   ::selection {
-    background-color: #4183C4 !important;
+    background-color: #4183c4 !important;
     color: #fff !important;
   }
 
   ::-moz-selection {
-    background-color: #4183C4 !important;
+    background-color: #4183c4 !important;
     color: #fff !important;
   }
 
   .ace_selection {
-    background-color: #4183C4 !important;
+    background-color: #4183c4 !important;
     color: #fff !important;
   }
 
@@ -283,14 +290,17 @@
   textarea.focus,
   textarea:focus,
   #q:focus ~ button,
-  input.color-editor-input:focus {
-    border-color: #4183C4 !important;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 2px #4183C4 !important;
+  input.color-editor-input:focus,
+  #ghd-settings select:focus,
+  #ghd-settings input:focus {
+    border-color: #4183c4 !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 2px #4183c4 !important;
+    outline-color: #4183c4 !important;
   }
 
   /* === Inputs === */
   select,
-  input:not(.js-color-editor-input),
+  input,
   textarea {
     -moz-appearance: none !important;
     background: #181818 !important;
@@ -322,17 +332,17 @@
   }
 
   input[type="checkbox"]:checked {
-    background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Im05OC43OTk5ODggMjEzbC0wLjc5OTk4OCA4OWMwIDAgMTAzIDEwMiAxMDQgMTAyYzEgMCAyMDUgLTIwMSAyMDUgLTIwMWMwIDAgMCAtOTAgMCAtOTFjLTAuNzk5OTg4IDAgLTIwNCAyMDMgLTIwNCAyMDNsLTEwNCAtMTAyeiIgZmlsbD0iI2RkZGRkZCIvPjwvZz48L3N2Zz4KCg==") !important;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Im05OC43OTk5ODggMjEzbC0wLjc5OTk4OCA4OWMwIDAgMTAzIDEwMiAxMDQgMTAyYzEgMCAyMDUgLTIwMSAyMDUgLTIwMWMwIDAgMCAtOTAgMCAtOTFjLTAuNzk5OTg4IDAgLTIwNCAyMDMgLTIwNCAyMDNsLTEwNCAtMTAyeiIgZmlsbD0iI2RkZGRkZCIvPjwvZz48L3N2Zz4KCg==") !important;
     background-size: cover !important;
   }
 
   input[type="checkbox"]:indeterminate {
-    background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxyZWN0IGhlaWdodD0iMTI4IiB3aWR0aD0iMzg0IiB5PSIxOTIiIHg9IjY0IiBmaWxsPSIjZGRkZGRkIi8+PC9nPjwvc3ZnPg==") !important;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxyZWN0IGhlaWdodD0iMTI4IiB3aWR0aD0iMzg0IiB5PSIxOTIiIHg9IjY0IiBmaWxsPSIjZGRkZGRkIi8+PC9nPjwvc3ZnPg==") !important;
     background-size: cover !important;
   }
 
   input[type=radio]:checked {
-    background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iNjQiIGZpbGw9IiNkZGRkZGQiLz48L2c+PC9zdmc+") !important;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iNjQiIGZpbGw9IiNkZGRkZGQiLz48L2c+PC9zdmc+") !important;
     background-size: cover !important;
   }
 
@@ -357,21 +367,13 @@
   .highlight,
   .diff-table,
   .tab-size {
-    tab-size: 4 !important;
-    -moz-tab-size: 4 !important;
+    tab-size: 2 !important;
+    -moz-tab-size: 2 !important;
   }
 
-  .repository-sidebar,
-  .blog-aside,
-  .gist-sidebar {
-
-    /*position: sticky !important;*/
+  .blog-aside {
+    position: sticky !important;
     top: 8px !important;
-  }
-
-  /* HACK: Fix z-index of sidebar (.discussion-sidebar is at z = 21) */
-  .repository-sidebar {
-    z-index: 24 !important;
   }
 
   .sunken-menu-item.is-loading .octicon {
@@ -546,7 +548,8 @@
   .fullscreen-overlay textarea,
   .avatar-child,
   .discussion-item .label-color,
-  .coupons .coupon-form-body {
+  .coupons .coupon-form-body,
+  .label-private {
     text-shadow: none !important;
     box-shadow: none !important;
   }
@@ -661,11 +664,17 @@
   #notebook .highlight pre,
   .output_area pre,
   .gist-snippet-meta .gist-count-links > li > a:hover,
-  .markdown-body img {
+  .markdown-body img,
+  .delete-owners-button:hover,
+  .btn-link,
+  .avatar-child,
+  .session-authentication .header-logged-out,
+  .session-authentication .auth-form-header {
     background: transparent !important;
   }
 
-  .render-container.is-render-ready.is-render-requested:not(.is-render-failed) {
+  .render-container.is-render-ready.is-render-requested:not(.is-render-failed),
+  .user-list li em {
     background: none !important;
   }
 
@@ -767,7 +776,7 @@
   /* ace find highlight */
   .ace_editor .ace_marker-layer .ace_selected-word {
     background: transparent !important;
-    border: 1px solid #4183C4 !important;
+    border: 1px solid #4183c4 !important;
   }
 
   /* dropdown arrows are css triangles, so we can't just apply color to all
@@ -778,7 +787,7 @@
   }
 
   .js-menu-target:hover .dropdown-arrow {
-    border-top-color: #4183C4 !important;
+    border-top-color: #4183c4 !important;
   }
 
   /* GitHub Bug: The focused + in the header has an ugly underline from a:active */
@@ -791,7 +800,8 @@
      Also match the border-radius to match other similar counters on the site  */
   #conversation_tab_counter,
   #commits_tab_counter,
-  #files_tab_counter {
+  #files_tab_counter,
+  .reponav-item .counter {
     vertical-align: middle !important;
     border-radius: 2px !important;
   }
@@ -803,7 +813,8 @@
   }
 
   /* GitHub Bug: Center counters vertically on the line */
-  .boxed-group .counter {
+  .boxed-group .counter,
+  .reponav-item .counter {
     position: relative !important;
     top: -1px !important;
   }
@@ -822,19 +833,6 @@
     max-width: 100% !important;
   }
 
-  /* GitHub Bug: Enable wrapping of long code lines */
-  .blob-code-inner,
-  .markdown-body > pre > code,
-  .markdown-body > .highlight > pre {
-    white-space: pre-wrap !important;
-    word-break: break-all !important;
-    display: block !important;
-  }
-
-  td.blob-code-inner {
-    display: table-cell !important;
-  }
-
   /* invisible border */
   .gisttabs a:not(.selected),
   .gisttabs a:not(.selected):hover,
@@ -845,7 +843,8 @@
   .list-group-item,
   .breadcrumb,
   .tabs > a,
-  .header .divider-vertical {
+  .header .divider-vertical,
+  .btn-link {
     border-color: transparent !important;
   }
 
@@ -1075,7 +1074,6 @@
   .explore-section,
   .repolist > li,
   .featured-grid-outer,
-  .new-discussion-timeline .sidebar-item + .sidebar-item,
   .gh-header-meta,
   .theme-picker-thumbs,
   .team,
@@ -1098,7 +1096,7 @@
   .stats-group .stat,
   .team-info-card .team-stats,
   .table-of-contents li,
-  .commit-grou,
+  .commit-group,
   .table-list-bordered .table-list-cell:first-child,
   .table-list-bordered .table-list-cell:last-child,
   .table-list-cell,
@@ -1184,7 +1182,15 @@
   .migration-feature-list:before,
   .migration-org-avatar,
   .org-migration-settings-section,
-  .word-upload-callout .note {
+  .word-upload-callout .note,
+  .commit-tease .commit-meta,
+  .reponav-item.selected,
+  .manage-user-info,
+  .manage-repo-access-title,
+  .manage-access-remove-footer,
+  .org-settings-team-item:first-child,
+  .label-generic,
+  .plan-notice {
     border-color: #343434 !important;
   }
 
@@ -1231,7 +1237,7 @@
   .discussion-timeline:before {
     margin-top: 2px !important;
     background: #444 !important;
-    height: calc(100% - 452px) !important;
+    height: calc(100% - 259px) !important;
   }
 
   .listings div.listing {
@@ -1279,7 +1285,8 @@
     border-top-color: #eee !important;
   }
 
-  .pagehead-tabs-item.selected {
+  .pagehead-tabs-item.selected,
+  .reponav-item.selected {
     border-bottom-color: #222 !important;
     border-top-width: 1px !important;
   }
@@ -1387,7 +1394,6 @@
   input[type="tel"],
   input[type="url"],
   textarea,
-  .two-factor-help,
   .dropdown-menu,
   .thread-subscription-status,
   .branch-action-body .merge-message,
@@ -1396,7 +1402,10 @@
   .branch-link,
   .discussion-item-merged.open .discussion-item-details,
   .word-upload-callout,
-  .commit-tease-contributors {
+  .commit-tease-contributors,
+  .ajax-pagination-form .ajax-pagination-btn,
+  .access-form-wrapper,
+  .session-authentication .create-account-callout {
     background: #181818 !important;
     border-color: #343434 !important;
   }
@@ -1410,7 +1419,8 @@
   .file .image,
   .merge-pr-more-commits,
   .release-timeline-tags .expander-dots,
-  .coupons .coupon-form-body {
+  .coupons .coupon-form-body,
+  .manage-repo-access-group {
     background: #181818 !important;
     border-color: #484848 !important;
   }
@@ -1486,7 +1496,6 @@
   .pagination .gap:hover,
   .pagination .disabled:hover,
   .comment-form-head .tabnav-tab.selected,
-  .table-list,
   .oauth-org-access-details .boxed-group-list > li.on,
   #fullscreen_overlay,
   .timeline-new-comment .discussion-topic-header,
@@ -1495,12 +1504,16 @@
   .file-history-tease .participation,
   .gist-quicksearch-result-header,
   .label-generic,
-  .migrate-org-roles {
+  .migrate-org-roles,
+  .commit-tease .commit-meta,
+  .manage-repo-access-icon,
+  .table-list {
     background: #181818 !important;
   }
 
   .markdown-body table tr,
-  .blob-num-context {
+  .blob-num-context,
+  #user-content-toc td {
     background: #141414 !important;
   }
 
@@ -1526,7 +1539,7 @@
     background: #1b1b1b !important;
   }
 
-  /* headers */
+  /* headers */
   .table-list-header,
   .timeline-comment-header,
   .boxed-group > h3,
@@ -1546,7 +1559,8 @@
   .dashboard-notice,
   .migration-jumbotron,
   .migration-sub-header,
-  .commit-tease {
+  .commit-tease,
+  .manage-repo-access-title {
     background: #1d1d1d !important;
   }
 
@@ -1576,7 +1590,8 @@
   .line[style^="background-color: rgb(255, 255, 204)"],
   .oauth-org-access-details .boxed-group-list > li.on:hover,
   pre div:hover,
-  table.files tr.navigation-focus td {
+  table.files tr.navigation-focus td,
+  .summary-stats li a:hover {
     background: #242424 !important;
   }
 
@@ -1595,7 +1610,6 @@
   .timeline-commits .commit-icon .octicon,
   .upload-progress,
   .search-results-listing em,
-  .repository-sidebar a.js-selected-navigation-item.selected,
   .discussion-bubble-inner,
   #wiki-history table td,
   .menu a.selected,
@@ -1616,7 +1630,11 @@
   .completeness-indicator-blank,
   .leaflet-control-zoom,
   .leaflet-container .leaflet-control-attribution.leaflet-compact-attribution,
-  .pagehead-tabs-item.selected {
+  .pagehead-tabs-item.selected,
+  .reponav-item.selected,
+  .ajax-pagination-form .ajax-pagination-btn:hover,
+  .ajax-pagination-form .ajax-pagination-btn:focus,
+  .manage-repo-access-not-active {
     background: #222 !important;
   }
 
@@ -1798,12 +1816,8 @@
   .progress-bar,
   .discusion-topic-infobar,
   .commits-listing:before,
-  ol.steps li.current .outdated-diff-comment-container .discussion-item-icon,
-  .discussion-item-ref .discussion-item-icon,
+  .discussion-item-icon,
   .jstree-wholerow-hovered,
-  .octicon-repo-push.discussion-item-icon,
-  .octicon-code.discussion-item-icon,
-  .new-discussion-timeline .discussion-item-icon,
   .bubble-contents,
   .ellipsis-button,
   .filter-list li span.bar,
@@ -1830,7 +1844,6 @@
   #repos .public,
   .inset-callout,
   #repo-message,
-  .summary-stats li a:hover,
   .repo-private-label,
   .label-admin,
   a.team-member-ellipsis,
@@ -1841,7 +1854,6 @@
 
   .comment-form,
   #issues .labels,
-  #gollum-editor select,
   .listings .odd,
   .feed,
   #files .description,
@@ -1864,7 +1876,6 @@
   .none p,
   .display div.choice,
   ul.fieldpills li,
-  .access-form-wrapper,
   .documentation-results a,
   .plans-pricing-callout,
   .auto-search-group .search-filters,
@@ -1915,15 +1926,47 @@
     border-color: #484848 !important;
   }
 
-  /* blame heats */
+  /* contribution calender and blame heats */
   .heat,
   .contrib-legend li,
   #contributions-calendar rect[fill="#d6e685"],
   #contributions-calendar rect[fill="#8cc665"],
   #contributions-calendar rect[fill="#44a340"],
   #contributions-calendar rect[fill="#1e6823"] {
-    background-color: #4183C4 !important;
-    fill: #4183C4 !important;
+    background-color: #5af !important;
+    fill: #5af !important;
+  }
+
+  /* halloween colors */
+  #contributions-calendar rect[fill="#FFEE4A"],
+  #contributions-calendar rect[fill="#FFC501"],
+  #contributions-calendar rect[fill="#FE9600"],
+  .contrib-legend li[style*="#FFEE4A"],
+  .contrib-legend li[style*="#FFC501"],
+  .contrib-legend li[style*="#FE9600"] {
+    background-color: #fe9600 !important;
+    fill: #fe9600 !important;
+  }
+
+  #contributions-calendar rect[fill="#FFEE4A"],
+  .contrib-legend li[style*="#FFEE4A"] {
+    opacity: .2 !important;
+  }
+
+  #contributions-calendar rect[fill="#FFC501"],
+  .contrib-legend li[style*="#FFC501"] {
+    opacity: .4 !important;
+  }
+
+  #contributions-calendar rect[fill="#FE9600"],
+  .contrib-legend li[style*="#FE9600"] {
+    opacity: .8 !important;
+  }
+
+  #contributions-calendar rect[fill="#03001C"],
+  .contrib-legend li[style*="#03001C"] {
+    background-color: #fc3 !important;
+    fill: #fc3 !important;
   }
 
   #contributions-calendar rect[fill="#eeeeee"],
@@ -1987,7 +2030,7 @@
   .onion-skin .controls .slider .slider-track .dragger,
   .leaflet-control-zoom a,
   .leaflet-control-attribution.leaflet-compact-attribution:after,
-  img[src$='favicons.githubusercontent.com/github.com'] {
+  img[src$="favicons.githubusercontent.com/github.com"] {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
@@ -2100,7 +2143,7 @@
 
   #commit-activity-detail path.path,
   .traffic-graph g.x.axis g.tick:first-child line {
-    stroke: #1DB34F !important;
+    stroke: #1db34f !important;
   }
 
   .traffic-graph g.x.axis g.tick:nth-child(14) line {
@@ -2113,11 +2156,11 @@
 
   .features-branch-diagram path[stroke="#c6d9ed"],
   .features-branch-diagram path[stroke="#4182C4"] {
-    stroke: #4183C4 !important;
+    stroke: #4183c4 !important;
   }
 
   .features-branch-diagram circle[fill="#4183c4"] {
-    fill: #4183C4 !important;
+    fill: #4183c4 !important;
   }
 
   .features-branch-diagram circle[stroke="#ffffff"] {
@@ -2190,7 +2233,9 @@
   .orgs-nav .count,
   .filter-item:not(.selected):hover,
   .task-progress .progress-bar .progress,
-  .oauth-connection-illustration .oauth-image {
+  .oauth-connection-illustration .oauth-image,
+  .manage-repo-access-wrapper::before,
+  .block-diff-neutral {
     background: #444 !important;
   }
 
@@ -2264,7 +2309,10 @@
   .api .alert,
   .file-history-tease,
   .flash,
-  .flash-global {
+  .flash-global,
+  .feature-banner,
+  .recently-touched-branches,
+  .contributing {
     background: #182030 !important;
   }
 
@@ -2274,8 +2322,13 @@
   .markdown-format .alert p,
   .blob-history,
   .flash,
-  .flash-global {
-    color: #8195BE !important;
+  .flash-global,
+  .feature-banner,
+  .recently-pushed-branch-details,
+  .recently-touched-branches,
+  .recently-touched-branches li,
+  .contributing {
+    color: #8195be !important;
   }
 
   .timeline-comment.current-user,
@@ -2295,12 +2348,16 @@
   .timeline-comment.current-user .timeline-comment-header .timeline-comment-label,
   .file-history-tease,
   .flash,
-  .flash-global {
+  .flash-global,
+  .feature-banner,
+  .recently-touched-branches,
+  .contributing {
     border: 1px solid #246 !important;
   }
 
   .timeline-comment.current-user .timeline-comment-header,
-  .blob-history {
+  .blob-history,
+  .recently-touched-branches li {
     border-bottom-color: #246 !important;
   }
 
@@ -2323,6 +2380,14 @@
   a.branch-name,
   .branch-name {
     border-color: #264c72 !important;
+    color: #abb8d3 !important;
+  }
+
+  .recently-pushed-branch-details a,
+  .recently-pushed-branch-details strong,
+  .recently-pushed-branch-details a:hover,
+  .recently-pushed-branch-details button:hover,
+  .contributing a:hover {
     color: #abb8d3 !important;
   }
 
@@ -2390,6 +2455,7 @@
 
   /* dark grey gradient */
   .btn,
+  input.btn,
   header.nav-bar,
   .bubble .bubble-title,
   kbd,
@@ -2482,7 +2548,15 @@
   .dropdown-item:hover,
   .dropdown-item.zeroclipboard-is-hover,
   .gist-snippet .link-overlay .link,
-  .gist-snippet .link-overlay strong {
+  .gist-snippet .link-overlay strong,
+  .select-menu-item.navigation-focus,
+  .select-menu-item.navigation-focus.selected,
+  .select-menu-item.navigation-focus.select-menu-action,
+  .select-menu-item.navigation-focus .description-inline,
+  .select-menu-item.navigation-focus h4,
+  .dangerzone > h3,
+  .gist-snippet-meta .gist-count-links > li > a:hover,
+  .team-member-list .manage-team-member .navigation-focus .btn-link {
     color: #fff !important;
   }
 
@@ -2552,7 +2626,6 @@
   .mini-discussion-bubble .mini-discussion-bubble-action,
   .sub-nav h2,
   .sub-nav h2 a,
-  .boxed-group .boxed-group-inner strong,
   .accordion .section a.section-head,
   .orgs-nav .org-nav-item.selected,
   .sub-nav li a.active,
@@ -2569,7 +2642,6 @@
   .dropdown-menu > li > a.zeroclipboard-is-hover > .octicon:before,
   .highlight-module .mega-icon:before,
   .headlines li a,
-  .repository-sidebar .clone-options .octicon:before,
   #wiki-rightbar li,
   .i-am-error p,
   .markdown-body .octicon-link,
@@ -2579,7 +2651,6 @@
   #article-platform-nav ul li.selected a,
   .section-heading-title a.selected,
   .marketing-nav a.selected,
-  .boxed-group .boxed-group-inner h4,
   .dashboard-tabs a:hover,
   .hidden-text-expander a:hover,
   .codesearch-cols em,
@@ -2631,10 +2702,6 @@
   .audit-action-info .context,
   .token-scope,
   .segmented-nav li.active a,
-  a.octotree_toggle:hover,
-  a.octotree_opts,
-  a.octotree_toggle.selected,
-  a.octotree_opts.selected,
   .tabs > a.selected,
   .highlight tr:hover .blob-num:not(.non-expandable),
   .highlight tr:hover .blob-num:not(.non-expandable):before,
@@ -2682,14 +2749,9 @@
   .rendered_html,
   .render-health:hover .symbol,
   .radio-label,
-  .select-menu-item.select-menu-action,
+  .select-menu-action,
   .select-menu-item.selected,
-  .select-menu-item.select-menu-action > .octicon,
   .select-menu-item.selected > .octicon,
-  .select-menu-item.navigation-focus,
-  .select-menu-item.navigation-focus.selected,
-  .select-menu-item.navigation-focus.select-menu-action,
-  .select-menu-item.navigation-focus .description-inline,
   .gist-snippet-meta .description,
   a.select-menu-item-text,
   .select-menu-item-text strong,
@@ -2698,7 +2760,13 @@
   .user-mention,
   a.team-mention,
   .team-mention,
-  .github-jobs-promotion strong {
+  .github-jobs-promotion strong,
+  .boxed-group-inner h4,
+  .octotree_github_sidebar a.octotree_toggle,
+  .reponav-item:hover,
+  .pagehead-tabs-item.selected,
+  .pagehead-tabs-item:hover,
+  a.pagehead-tabs-item:hover {
     color: #e0e0e0 !important;
   }
 
@@ -2717,7 +2785,6 @@
   a.social-count,
   span.social-count,
   #languages a.bar,
-  dl.form dt,
   .lineoption p,
   a.blog-title,
   table.notifications th,
@@ -2768,7 +2835,6 @@
   .gh-header-meta .author,
   .timeline-comment-header .author,
   .timeline-commits .author,
-  .new-discussion-timeline .sidebar-milestone .milestone-name,
   .sidebar-assignee .assignee,
   .rss-subscribe,
   .sidebar-module h3 a,
@@ -2776,7 +2842,6 @@
   .menu a,
   .octotip,
   .graph-canvas .activity,
-  .boxed-group .boxed-group-inner,
   .ace_gutter-active-line,
   .billing-section .section-content,
   #readme span.name,
@@ -2792,7 +2857,6 @@
   .discussion-item-ref-title .title-link,
   .org-teams-list .team,
   .subnav-search-context .select-menu-item-icon,
-  a.wiki-edit-link,
   .ace-github,
   a.pagehead-nav-item.selected,
   a.pagehead-nav-item:hover,
@@ -2800,7 +2864,6 @@
   .repo-collection .collection-stat,
   a.subscribe-feed,
   header ul.links a:hover,
-  .team-info-card .stats-group .stat.no-link:hover .stat-number,
   div.container > p,
   .commits-list-item .commit-author,
   .full-commit .sha-block > .sha,
@@ -2813,7 +2876,7 @@
   .table-list-header-toggle .btn-link:hover,
   a.issue-title-link,
   .table-list-item p,
-  .table-list-milestones .milestone-title-link a,
+  .milestone-title-link a,
   .org-header .edit-org,
   .blob-code,
   .blob-code-inner,
@@ -2833,7 +2896,6 @@
   .fullscreen-overlay textarea:hover,
   #header ul.top-nav > li > a,
   #header ul.top-nav > li > button,
-  a.octotree_toggle,
   a.team-member-ellipsis:hover,
   .rendered_html pre,
   .rendered_html code,
@@ -2843,15 +2905,16 @@
   .completeness-indicator-success,
   .completeness-indicator-error,
   .completeness-indicator-problem,
-  .pagehead-tabs-item.selected,
-  a.pagehead-tabs-item.selected,
-  .pagehead-tabs-item:hover,
-  a.pagehead-tabs-item:hover,
   .article-meta,
   a.article-meta,
   .timeline-comment-header-text code a,
   .commit-tease-sha,
-  a.commit-tease-sha {
+  a.commit-tease-sha,
+  .reponav-item.selected,
+  .stats-group-stat.no-link:hover .stat-number,
+  .octotree_github_sidebar a.octotree_opts,
+  .octotree_help > span,
+  .application-authorizations .oauth-app-access-name {
     color: #c0c0c0 !important;
   }
 
@@ -2863,7 +2926,7 @@
   .capped-box,
   .marketing-nav a,
   .header .header-logo-invertocat span,
-  .repository-meta .repository-description,
+  .repository-meta,
   .gist-item .description,
   p.explain,
   .news .alert .simple .title,
@@ -2897,7 +2960,7 @@
   h3.conversation-list-heading,
   a.filter-tab,
   .starred-repo p.description,
-  .commit .commit-desc pre,
+  .commit-desc pre,
   .org-repo-stats a,
   .org-repo-updated a,
   .org-header-meta .meta-item .meta-link,
@@ -2954,7 +3017,6 @@
   .news .alert .pull-info,
   .news .alert .branch-link,
   .release .release-authorship a,
-  .contributing,
   .wiki-wrapper .wiki-empty-box:hover,
   .select-menu.is-showing-clear-item .select-menu-clear-item .octicon,
   .diffstat-summary a,
@@ -2986,7 +3048,13 @@
   .blob-num:hover,
   .select-menu-modal,
   .gist-snippet-meta .gist-count-links > li > a,
-  .commit-tease .message {
+  .commit-tease .message,
+  .commit-author-section,
+  .boxed-group-inner,
+  .manage-repo-access-not-active,
+  .milestone-name,
+  a.milestone-name,
+  .news .body blockquote code {
     color: #a0a0a0 !important;
   }
 
@@ -3046,8 +3114,6 @@
   .labels-list-action,
   table.tag-list p a,
   table.tag-list td.date a,
-  a.octicon-btn,
-  .markdown-body blockquote,
   .muted-link,
   a.muted-link,
   .render-view-modes li,
@@ -3066,13 +3132,14 @@
   ul.filter-list .filter-item,
   .member-meta .teams-link,
   .member-meta .btn-link,
-  a.stats-group-stat,
   ul.comparison-list > li em,
   ul.comparison-list > li.title,
   .diffstat-summary,
   a.team-member-ellipsis,
   a.discussion-item-toggle-open,
   a.discussion-item-toggle-closed,
+  button.discussion-item-toggle-open,
+  button.discussion-item-toggle-closed,
   .dropdown-header,
   .participation a,
   .completeness-indicator-info,
@@ -3083,7 +3150,15 @@
   .org-settings-team-count,
   a.muted-link strong,
   table.files td.icon,
-  .commit-tease {
+  .commit-tease,
+  .reponav-item,
+  a.reponav-item,
+  .delete-owners-button,
+  .stats-group-stat,
+  a.stats-group-stat,
+  .stats-group-stat.no-link:hover,
+  .wiki-edit-link,
+  a.wiki-edit-link {
     color: #808080 !important;
   }
 
@@ -3156,12 +3231,25 @@
   .blob-num,
   .recent-gists .description .blank,
   .recent-gists .metadata,
-  .member-meta .access-link {
+  .member-meta .access-link,
+  .gist-quicksearch-no-results,
+  #user-content-toc ul ul li:before,
+  .btn-octicon,
+  a.btn-octicon,
+  button.btn-octicon,
+  .markdown-body blockquote,
+  .markdown-body blockquote code,
+  .user-list li em,
+  .reponav-item .octicon,
+  .pagehead-tabs-item .octicon {
     color: #666 !important;
   }
 
   .branch-infobar .lightweight-actions > li .octicon,
-  .pagehead-tabs-item .octicon {
+  .manage-repo-access-icon .octicon,
+  .wiki-wrapper .wiki-history .date,
+  .wiki-wrapper .wiki-history .commit-id,
+  .issue-meta-section .octicon {
     color: #4b4b4b !important;
   }
 
@@ -3215,7 +3303,9 @@
   .commit-title .commit-link tt,
   .btn-block-user,
   .pagehead-tabs-item.selected > .octicon,
-  .text-muted strong {
+  .reponav-item.selected > .octicon,
+  .select-menu-action > .octicon,
+  .text-muted strong:not(.text-emphasized) {
     color: inherit !important;
   }
 
@@ -3235,8 +3325,8 @@
   .caption,
   .centered-graphic,
   .login_form h1 {
-    background-color: #4183C4 !important;
-    border-color: #4183C4 !important;
+    background-color: #4183c4 !important;
+    border-color: #4183c4 !important;
   }
 
   /* === red === */
@@ -3262,12 +3352,15 @@
   .btn-danger:hover,
   .minibutton.danger:hover {
     background: #a31e16 !important;
-    border: #b00 1px solid !important;
+    border-color: #b00 !important;
   }
 
   .mergeable-dirty .bubble,
   .mergeable-dirty .merge-status-icon,
-  .completeness-indicator-error {
+  .completeness-indicator-error,
+  .dangerzone > h3,
+  .block-diff-deleted,
+  .text-diff-deleted .block-diff-neutral {
     background: #c31e16 !important;
   }
 
@@ -3282,12 +3375,6 @@
 
   .mergeable-dirty .bubble:after {
     border-right-color: #a31e16 !important;
-  }
-
-  /* red gradient */
-  .dangerzone > h3 {
-    background: linear-gradient(#a33, #722) !important;
-    border-radius: 0 !important;
   }
 
   /* bright red text */
@@ -3326,7 +3413,10 @@
   .reverted.octicon,
   .text-failure strong,
   .text-error strong,
-  .text-danger strong {
+  .text-danger strong,
+  .member-two-factor-disabled strong,
+  .delete-owners-button:hover,
+  .dangerzone-module h4 {
     color: #c31e16 !important;
   }
 
@@ -3340,7 +3430,6 @@
   #message .sent,
   .notification,
   .callout,
-  .contributing,
   .ejector,
   #issues_search .results em,
   .bootcamp-help ul li,
@@ -3355,27 +3444,17 @@
   a.btn.classy,
   .signed-out-comment,
   .facebox-alert,
-  .recently-touched-branches,
   .form-checkbox label em.highlight {
     background: #321 !important;
     border-color: #542 !important;
     color: #b74 !important;
   }
 
-  .recently-touched-branches li {
-    border-color: #542 !important;
-  }
-
-  .recently-pushed-branch-details,
   #toc .octicon-diff-modified,
   .secret .repo-label span,
   .api .s2,
   .alert.warning p {
     color: #b74 !important;
-  }
-
-  .recently-pushed-branch-details a {
-    color: #da6 !important;
   }
 
   /* === Yellow panel === */
@@ -3390,10 +3469,11 @@
   .flash-global.flash-warn,
   .markdown-body li.added.moved,
   .repo-private-label,
-  .gist-secret-label {
-    background: #323204 !important;
+  .gist-secret-label,
+  .label-private {
+    background: #383412 !important;
     border-color: #662 !important;
-    color: #aa6 !important;
+    color: #cb4 !important;
   }
 
   /* code and diff line selection */
@@ -3471,7 +3551,8 @@
   .state-indicator.proposed,
   .state-indicator.reopened,
   .boxed-group-success,
-  .branch-action-state-clean .branch-action-icon {
+  .branch-action-state-clean .branch-action-icon,
+  .user-list li .actions .status-modified {
     background: #163 !important;
     border-color: #062 !important;
   }
@@ -3524,7 +3605,13 @@
   a.type-icon-state-open,
   .text-success strong,
   .text-open strong {
-    color: #6CC644 !important;
+    color: #6cc644 !important;
+  }
+
+  /* bright green background */
+  .block-diff-added,
+  .text-diff-added .block-diff-neutral {
+    background: #6cc644 !important;
   }
 
   /* interactive button - bright border */
@@ -3534,8 +3621,14 @@
     border-color: #083 !important;
   }
 
+  .button.primary:disabled,
+  .button.primary:disabled:hover,
+  .button.primary.disabled,
+  .button.primary.disabled:hover,
   .btn-primary:disabled,
-  .button.primary:disabled {
+  .btn-primary:disabled:hover,
+  .btn-primary.disabled,
+  .btn-primary.disabled:hover {
     background: linear-gradient(to bottom, #203522, #152715) !important;
     border-color: #041 !important;
   }
@@ -3559,11 +3652,6 @@
     background: linear-gradient(to bottom, #508055, #407045) !important;
   }
 
-  /* Red */
-  .dangerzone-module h4 {
-    color: #a00 !important;
-  }
-
   /* === orange notification === */
   #user-links .unread_count,
   .minorproblem .pageheader_wrap {
@@ -3576,14 +3664,14 @@
   .state-indicator.merged,
   .state-merged,
   .discussion-item-merged .discussion-item-icon {
-    background: #6E5494 !important;
+    background: #6e5494 !important;
   }
 
   /* purple text */
   ul.summary-stats li .octicon-git-pull-request,
   .type-icon-state-merged,
   a.type-icon-state-merged {
-    color: #6E5494 !important;
+    color: #6e5494 !important;
   }
 
   .diagram-icon-small.active .mega-octicon:before {
@@ -3596,7 +3684,7 @@
   }
 
   ul.view-modes-menu {
-    background-image: url('data:image/gif;base64, R0lGODlhBwAEAIAAACIiIv///yH5BAEAAAEALAAAAAAHAAQAAAIIhA+BGWoNWSgAOw==') !important;
+    background-image: url("data:image/gif;base64,R0lGODlhBwAEAIAAACIiIv///yH5BAEAAAEALAAAAAAHAAQAAAIIhA+BGWoNWSgAOw==") !important;
   }
 
   /* === Images === */
@@ -3609,6 +3697,11 @@
   .repo-list-item .repo-list-stats {
     position: relative !important;
     z-index: 1 !important;
+  }
+
+  .reponav-item {
+    position: relative !important;
+    top: 2px !important;
   }
 
   .participation-graph svg {
@@ -3665,8 +3758,9 @@
   img[src="/images/spinner.gif"],
   .facebox-loading,
   .branch-action-body .spinner,
-  .status-indicator-loading {
-    background: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTMzMi4yODk0MjkgODcuMDg3MjE5YzYwLjAzMzI5NSAtMjAgMTE0IC0yMSAxNzIgMS4wNDcyNDFsLTExLjQwMzU5NSAzMi44NTA5NTJjLTQzLjMzMzM0NCAtMTUgLTEwNCAtMTUgLTE0OCAwIiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA0MTguNzU3IDk2LjE4ODUpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwcyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTM5OC41Mjc0NjYgMjQ2LjM4ODU5NmM2MC4wMzMzMjUgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQxbC0xMS40MDM1NjQgMzIuODUwOTY3Yy00My4zMzMzNzQgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgNDg0Ljk5NSAyNTUuNDkpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjEyNXMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Im0zMzEuMzMyMjE0IDQwNC44MjM2NjljNjAuMDMzMzI1IC0yMCAxMTQgLTIxIDE3MiAxLjA0NzI0MWwtMTEuNDAzNTM0IDMyLjg1MDk1MmMtNDMuMzMzNDA1IC0xNSAtMTA0IC0xNSAtMTQ4IDAiIHRyYW5zZm9ybT0icm90YXRlKDEzNSA0MTcuOCA0MTMuOTI1KSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC4yNTBzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTcxLjU4MjIzIDQ3MC4zMjM2NjljNjAuMDMzMzEgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQxbC0xMS40MDM1MzQgMzIuODUwOTUyYy00My4zMzM0MDUgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoMTgwIDI1OC4wNSA0NzkuNDI1KSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC4zNzVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTMuMDgyMiA0MDYuMDc0MDA1YzYwLjAzMzMwMSAtMjAgMTE0IC0yMSAxNzIgMS4wNDY5OTdsLTExLjQwNDAwNyAzMi44NTA5ODNjLTQzLjMzMjk5MyAtMTUgLTEwNCAtMTUgLTE0OCAwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTM1IDk5LjU1IDQxNS4xNzUpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjUwMHMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Im0tNTMuNzEzNDg2IDI0Ny4wOTE1NTNjNjAuMDMzMzEgLTIwIDExNCAtMjEgMTcyIDEuMDQ2OTk3bC0xMS40MDQwMjIgMzIuODUwOTgzYy00My4zMzI5NzcgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDMyLjc1NCAyNTYuMTkzKSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC42MjVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTIuODgzNjIxIDg3LjA2MTQ4NWM2MC4wMzMyOTUgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQ5bC0xMS40MDM1OTUgMzIuODUwOTUyYy00My4zMzMzNDQgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDk5LjM1MTQgOTYuMTYyOCkiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuNzUwcyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTE3Mi45MDY2MzEgMjAuOTI5NzQxYzYwLjAzMzMxIC0yMCAxMTQgLTIxIDE3MiAxLjA0NzIzbC0xMS40MDM1OTUgMzIuODUwOTZjLTQzLjMzMzM0NCAtMTUgLTEwNCAtMTUgLTE0OCAwIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjg3NXMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiNlZWUiIGQ9Im0gMTk3IDQ1OSBjIDAgMCAwIC00OCAwIC00OCAwIDAgLTQgLTQgLTMzIC0xIC0yOCAzIC02MiAtNjYgLTY1IC02OSAyNCAtMTAgNDMgMjYgNjUgMzggMCAwIDMxIDAgMzEgMCAwIDAgMyAtNDQgMjAgLTM3IDE3IDYgLTcyIDEgLTk3IC02MSAtMjUgLTYyIDE5IC0xMjYgMjAgLTExNSAwIDkgLTE3IC0zNSAtMTAgLTQ2IDIwIC0yNCA1MCAxMSA2OSAxNSA1IDAgMTggLTggNTkgLTcgNDEgMCA1NSA4IDYwIDYgMjIgLTEwIDUxIC0zMiA2NSAtMTcgMTAgMTIgLTEgNjEgLTEgNDkgMCAtMTIgNDMgODEgNiAxMzIgQyAzNTcgMzQ0IDI5MSAzNDEgMzAyIDM0NCBjIDIxIDE1IDE0IDkxIDE0IDExNSBsIC0yMiA0IDAgLTc0IGMgMCAtOSAtOSAtMTAgLTkgLTkgbCAwIDg1IC0yMSAxIDAgLTg2IC0xMCAwIDAgODYgLTIwIC0xIDAgLTgzIGMgMCAwIC04IC0xIC04IDEwIGwgMCA3MiIvPjwvc3ZnPg==") !important;
+  .status-indicator-loading,
+  .ajax-pagination-form.loading .ajax-pagination-btn:after {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTMzMi4yODk0MjkgODcuMDg3MjE5YzYwLjAzMzI5NSAtMjAgMTE0IC0yMSAxNzIgMS4wNDcyNDFsLTExLjQwMzU5NSAzMi44NTA5NTJjLTQzLjMzMzM0NCAtMTUgLTEwNCAtMTUgLTE0OCAwIiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA0MTguNzU3IDk2LjE4ODUpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwcyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTM5OC41Mjc0NjYgMjQ2LjM4ODU5NmM2MC4wMzMzMjUgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQxbC0xMS40MDM1NjQgMzIuODUwOTY3Yy00My4zMzMzNzQgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgNDg0Ljk5NSAyNTUuNDkpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjEyNXMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Im0zMzEuMzMyMjE0IDQwNC44MjM2NjljNjAuMDMzMzI1IC0yMCAxMTQgLTIxIDE3MiAxLjA0NzI0MWwtMTEuNDAzNTM0IDMyLjg1MDk1MmMtNDMuMzMzNDA1IC0xNSAtMTA0IC0xNSAtMTQ4IDAiIHRyYW5zZm9ybT0icm90YXRlKDEzNSA0MTcuOCA0MTMuOTI1KSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC4yNTBzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTcxLjU4MjIzIDQ3MC4zMjM2NjljNjAuMDMzMzEgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQxbC0xMS40MDM1MzQgMzIuODUwOTUyYy00My4zMzM0MDUgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoMTgwIDI1OC4wNSA0NzkuNDI1KSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC4zNzVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTMuMDgyMiA0MDYuMDc0MDA1YzYwLjAzMzMwMSAtMjAgMTE0IC0yMSAxNzIgMS4wNDY5OTdsLTExLjQwNDAwNyAzMi44NTA5ODNjLTQzLjMzMjk5MyAtMTUgLTEwNCAtMTUgLTE0OCAwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTM1IDk5LjU1IDQxNS4xNzUpIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjUwMHMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiMzMzMiIGQ9Im0tNTMuNzEzNDg2IDI0Ny4wOTE1NTNjNjAuMDMzMzEgLTIwIDExNCAtMjEgMTcyIDEuMDQ2OTk3bC0xMS40MDQwMjIgMzIuODUwOTgzYy00My4zMzI5NzcgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDMyLjc1NCAyNTYuMTkzKSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iZmlsbCIgdmFsdWVzPSIjMzMzOyNlZWU7IzMzMzsjMzMzIiBiZWdpbj0iMC42MjVzIiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvcGF0aD48cGF0aCBmaWxsPSIjMzMzIiBkPSJtMTIuODgzNjIxIDg3LjA2MTQ4NWM2MC4wMzMyOTUgLTIwIDExNCAtMjEgMTcyIDEuMDQ3MjQ5bC0xMS40MDM1OTUgMzIuODUwOTUyYy00My4zMzMzNDQgLTE1IC0xMDQgLTE1IC0xNDggMCIgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDk5LjM1MTQgOTYuMTYyOCkiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0iIzMzMzsjZWVlOyMzMzM7IzMzMyIgYmVnaW49IjAuNzUwcyIgZHVyPSIxcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz48L3BhdGg+PHBhdGggZmlsbD0iIzMzMyIgZD0ibTE3Mi45MDY2MzEgMjAuOTI5NzQxYzYwLjAzMzMxIC0yMCAxMTQgLTIxIDE3MiAxLjA0NzIzbC0xMS40MDM1OTUgMzIuODUwOTZjLTQzLjMzMzM0NCAtMTUgLTEwNCAtMTUgLTE0OCAwIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9IiMzMzM7I2VlZTsjMzMzOyMzMzMiIGJlZ2luPSIwLjg3NXMiIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9wYXRoPjxwYXRoIGZpbGw9IiNlZWUiIGQ9Im0gMTk3IDQ1OSBjIDAgMCAwIC00OCAwIC00OCAwIDAgLTQgLTQgLTMzIC0xIC0yOCAzIC02MiAtNjYgLTY1IC02OSAyNCAtMTAgNDMgMjYgNjUgMzggMCAwIDMxIDAgMzEgMCAwIDAgMyAtNDQgMjAgLTM3IDE3IDYgLTcyIDEgLTk3IC02MSAtMjUgLTYyIDE5IC0xMjYgMjAgLTExNSAwIDkgLTE3IC0zNSAtMTAgLTQ2IDIwIC0yNCA1MCAxMSA2OSAxNSA1IDAgMTggLTggNTkgLTcgNDEgMCA1NSA4IDYwIDYgMjIgLTEwIDUxIC0zMiA2NSAtMTcgMTAgMTIgLTEgNjEgLTEgNDkgMCAtMTIgNDMgODEgNiAxMzIgQyAzNTcgMzQ0IDI5MSAzNDEgMzAyIDM0NCBjIDIxIDE1IDE0IDkxIDE0IDExNSBsIC0yMiA0IDAgLTc0IGMgMCAtOSAtOSAtMTAgLTkgLTkgbCAwIDg1IC0yMSAxIDAgLTg2IC0xMCAwIDAgODYgLTIwIC0xIDAgLTgzIGMgMCAwIC04IC0xIC04IDEwIGwgMCA3MiIvPjwvc3ZnPg==") !important;
     background-size: contain !important;
   }
 
@@ -3690,6 +3784,23 @@
     padding: 32px !important;
   }
 
+  /* front page: 'more' spinner */
+  .ajax-pagination-form.loading .ajax-pagination-btn {
+    position: relative !important;
+    border-color: #343434 !important;
+    background: #181818 !important;
+  }
+
+  .ajax-pagination-form.loading .ajax-pagination-btn:after {
+    content: '' !important;
+    position: absolute !important;
+    width: 16px !important;
+    height: 16px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
   .branch-action-body .spinner,
   div.facebox-loading,
   .status-indicator-loading {
@@ -3702,7 +3813,7 @@
   .render-shell .img-view img,
   .file .image img,
   .file .image canvas {
-    background-image: url('data:image/gif;base64, R0lGODlhCgAKAIAAABoaGgAAACwAAAAACgAKAAACEYQdmYcaDNxjEspKndVZbc8UADs=') !important;
+    background-image: url("data:image/gif;base64,R0lGODlhCgAKAIAAABoaGgAAACwAAAAACgAKAAACEYQdmYcaDNxjEspKndVZbc8UADs=") !important;
   }
 
   /* language stats bar */
@@ -3725,7 +3836,8 @@
   #gist-form .gist-name-textbox,
   #adv_code_search .search-page-input,
   .fullscreen-overlay textarea,
-  .file .image .border-wrap {
+  .file .image .border-wrap,
+  .site-search .chromeless-input {
     border: 0 !important;
   }
 
@@ -3788,8 +3900,16 @@
   .markdown-body pre,
   .markdown-format .highlight pre,
   .markdown-body .highlight pre,
-  body.blog pre {
+  body.blog pre,
+  #user-content-toc td {
     border: 1px solid rgba(255, 255, 255, .1) !important;
+  }
+
+  /* toc in markdown, reset border-collaps so border-radius works   */
+
+  /* https://github.com/bitcoin/bips/blob/master/bip-0037.mediawiki */
+  #user-content-toc {
+    border-collapse: separate !important;
   }
 
   #facebox pre,
@@ -3805,14 +3925,14 @@
   }
 
   .featured-label {
-    background: #F5B987 !important;
+    background: #f5b987 !important;
     border: none !important;
     padding: 6px !important;
-    color: #D26911 !important;
+    color: #d26911 !important;
   }
 
   .featured-label .octicon {
-    color: #D26911 !important;
+    color: #d26911 !important;
   }
 
   /* secret gists */
@@ -3937,6 +4057,27 @@
     border-color: #500 !important;
   }
 
+  /* scroll bar */
+  ::-webkit-scrollbar {
+    max-width: 10px !important;
+    max-height: 10px !important;
+    background: #181818 !important;
+  }
+
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: #181818 !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px !important;
+    background: rgba(80, 80, 80, .6) !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(96, 96, 96, .6) !important;
+  }
+
   /* GitHub Enterprise Only
    *                                 _____..---========+*+==========---.._____
    *    ______________________ __,-='=====____  =================== _____=====`=
@@ -3951,12 +4092,12 @@
   }
 
   .enterprise.page-profile .profilecols ul.stats li strong {
-    color: #CCC;
+    color: #ccc;
     background: transparent !important;
   }
 
   .enterprise ul.selling-points li {
-    color: #FFF;
+    color: #fff;
   }
 
   .enterprise .steps {
@@ -3966,16 +4107,16 @@
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     background: #222;
-    color: #FFF;
+    color: #fff;
   }
 
   .enterprise .dashboard-notice {
     background: #222 !important;
-    color: #CCC;
+    color: #ccc;
   }
 
   .enterprise .autocomplete-item {
-    color: #CCC;
+    color: #ccc;
   }
 
   .enterprise .repo-nav a:focus,
@@ -4039,14 +4180,15 @@
   /* ZenHub styling */
   .zh-button,
   .is-not-pawed:hover .zh-paw-btn-inner {
-    background: #4183C4 !important;
-    border-color: #4183C4 !important;
+    background: #4183c4 !important;
+    border-color: #4183c4 !important;
     color: #fff !important;
   }
 
   .zh-pipeline-issue-toggler:hover,
-  .date_selector .date-button {
-    color: #4183C4 !important;
+  .date_selector .date-button,
+  .zh-todo-link:hover .zh-todo-navbar-icon {
+    color: #4183c4 !important;
   }
 
   /* background */
@@ -4084,7 +4226,6 @@
     border-color: #484848 !important;
   }
 
-  li.zh-pipeline-issue,
   .zh-pipeline-issue-content,
   .zh-issue-meta,
   .zh-pipeline-issue-action,
@@ -4095,7 +4236,12 @@
   .zh-burndown-chart .milestone-start-calendar-container,
   .zh-toggle-button.selected,
   .popover li,
-  .zh-todo-item {
+  .zh-todo-item,
+  div.zh-issuecard-container,
+  .zh-onboarding-modal,
+  .zh-onboarding-tooltip-target,
+  .zh-onboarding-tooltip,
+  .zh-login-status {
     background: #222 !important;
     border-color: #484848 !important;
   }
@@ -4128,7 +4274,13 @@
   .zh-burndown-chart .stats-container,
   .popover li,
   .zh-pipeline-collapsed .zh-pipeline-options,
-  .zh-todolist-menu.ui-sortable-helper {
+  .zh-todolist-menu.ui-sortable-helper,
+  .zh-new-pipeline-header,
+  .zh-issuecard-main,
+  .zh-onboarding-tooltip-title,
+  .zh-onboarding-modal-title,
+  .zh-multi-repo-show-one-btn:disabled,
+  .zh-multi-repo-show-one-btn:disabled:hover {
     border-color: #484848 !important;
   }
 
@@ -4143,17 +4295,23 @@
     border-right-color: #343434 !important;
   }
 
+  .zh-onboarding-tooltip-w::after {
+    border-left-color: #343434 !important;
+  }
+
   /* text */
   .zh-uploader-container *,
   .zh-overlay-body,
   .zh-pipeline-issue-action,
   .zh-board-menu-item button.selected .octicon,
-  .zh-todolist-create:hover {
+  .zh-todolist-create:hover,
+  .zh-onboarding-modal *,
+  .zh-onboarding-tooltip-target,
+  .zh-onboarding-tooltip * {
     color: #fff !important;
   }
 
-  .popover li,
-  .zh-pipeline-options li:hover {
+  .popover li {
     color: #ccc !important;
   }
 
@@ -4163,8 +4321,15 @@
     color: #888 !important;
   }
 
-  .zh-pipeline-options li {
-    color: #5f5f5f !important;
+  .zh-sidebar-icon {
+    opacity: 1 !important;
+    -webkit-filter: brightness(2) !important;
+    filter: brightness(2) !important;
+  }
+
+  .zh-pipeline-options span {
+    -webkit-filter: brightness(4) !important;
+    filter: brightness(4) !important;
   }
 
   /* tooltip */
@@ -4219,31 +4384,29 @@
     filter: invert(40%) !important;
   }
 
-  .zh-icon-burndown,
-  .zh-icon-column-collapse,
-  .zh-icon-column-expand,
-  .zh-todo-navbar-icon,
   .zh-todo-icon-today-dark-grey {
     -webkit-filter: invert(100%) !important;
     filter: invert(100%) !important;
   }
 
-  /* webkit scrollbars */
-  .zh-pipeline-issues-wrapper::-webkit-scrollbar-track {
-    background: #181818 !important;
+  /*[[code-wrap]]*/
+
+  /* grunt-remove-block-below */
+
+  /* GitHub Bug: Enable wrapping of long code lines */
+  body:not(.nowrap) .blob-code-inner,
+  body:not(.nowrap) .markdown-body pre > code,
+  body:not(.nowrap) .markdown-body .highlight > pre {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    display: block !important;
   }
 
-  .zh-board-wrapper.horizontal-scrollbar::-webkit-scrollbar-track {
-    background: #181818 !important;
+  body:not(.nowrap) td.blob-code-inner {
+    display: table-cell !important;
   }
 
-  .zh-board-wrapper.horizontal-scrollbar::-webkit-scrollbar-thumb {
-    background: #444 !important;
-  }
-
-  .zh-pipeline-issues-wrapper::-webkit-scrollbar-thumb {
-    background: #444 !important;
-  }
+  /* grunt-remove-block-above */
 
   /* OS X font rendering tweak, only active on sub-retina pixel ratios, might affect
    * Chrome on other OSs too, see https://github.com/StylishThemes/GitHub-Dark/issues/86
@@ -4287,417 +4450,522 @@
   .copyable-terminal,
   #notebook .input_area,
   .blob-code-context,
-  .ace_editor,
-  .highlight {
-    background-color: #1D1F21 !important;
-    color: #C5C8C6 !important;
+  .highlight,
+  .ace_editor {
+    background: #141414 !important;
+    color: #ccc !important;
   }
 
   .pl-c,
   .pl-c span {
-    color: #969896 !important;
+    color: #5f5a60 !important;
     font-style: italic !important;
   }
 
+  /* comment */
   .pl-c1 {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* constant */
   .pl-cce {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
+    font-weight: normal !important;
   }
 
+  /* constant.character.escape */
   .pl-cn {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* constant.numeric */
   .pl-coc {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* constant.other.color */
   .pl-cos {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
+  /* constant.other.symbol */
   .pl-e {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity */
   .pl-ef {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.function */
   .pl-en {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.name */
   .pl-enc {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* entity.name.class */
   .pl-enf {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.name.function */
   .pl-enm {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.name.method-name */
   .pl-ens {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* entity.name.section */
   .pl-ent {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* entity.name.tag */
   .pl-entc {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.name.type.class */
   .pl-enti {
-    color: #F0C674 !important;
-    font-weight: 700 !important;
+    color: #ac885b !important;
+    font-weight: bold !important;
   }
 
+  /* entity.name.type.instance */
   .pl-entm {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* entity.name.type.module */
   .pl-eoa {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* entity.other.attribute-name */
   .pl-eoac {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* entity.other.attribute-name.class */
   .pl-eoac .pl-pde {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* punctuation.definition.entity */
   .pl-eoai {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* entity.other.attribute-name.id */
   .pl-eoai .pl-pde {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* punctuation.definition.entity */
   .pl-eoi {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* entity.other.inherited-class */
   .pl-k {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* keyword */
   .pl-ko {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* keyword.operator */
   .pl-kolp {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* keyword.operator.logical.python */
   .pl-kos {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* keyword.other.special-method */
   .pl-kou {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* keyword.other.unit */
   .pl-mai .pl-sf {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* support.function */
   .pl-mb {
-    color: #B5BD68 !important;
-    font-weight: 700 !important;
+    color: #8f9d6a !important;
+    font-weight: bold !important;
   }
 
+  /* markup.bold */
   .pl-mc {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* markup.changed */
+  .pl-mh {
+    color: #cf6a4c !important;
+    font-weight: normal !important;
+  }
+
+  /* markup.heading */
   .pl-mh .pl-pdh {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* markup.heading punctuation.definition.heading */
   .pl-mi {
-    color: #B294BB !important;
+    color: #cda869 !important;
     font-style: italic !important;
   }
 
+  /* markup.italic */
   .pl-ml {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
+  /* markup.list */
   .pl-mm {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* meta.module-reference */
   .pl-mp {
-    color: #81A2BE !important;
+    color: #c5af75 !important;
   }
 
+  /* meta.property-name */
   .pl-mp1 .pl-sf {
-    color: #81A2BE !important;
+    color: #dad085 !important;
   }
 
+  /* meta.property-value support.function */
   .pl-mq {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* markup.quote */
   .pl-mr {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* meta.require */
   .pl-ms {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* meta.selector */
   .pl-pdb {
-    color: #B5BD68 !important;
-    font-weight: 700 !important;
+    color: #8f9d6a !important;
+    font-weight: bold !important;
   }
 
+  /* punctuation.definition.bold */
   .pl-pdc {
-    color: #969896 !important;
+    color: #5f5a60 !important;
     font-style: italic !important;
   }
 
+  /* punctuation.definition.comment */
   .pl-pdc1 {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* punctuation.definition.constant */
   .pl-pde {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* punctuation.definition.entity */
   .pl-pdi {
-    color: #B294BB !important;
+    color: #cda869 !important;
     font-style: italic !important;
   }
 
+  /* punctuation.definition.italic */
   .pl-pds {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
+  /* punctuation.definition.string */
   .pl-pdv {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* punctuation.definition.variable */
   .pl-pse {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* punctuation.section.embedded */
   .pl-pse .pl-s2 {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* punctuation.section.embedded source */
   .pl-s {
-    color: #B294BB !important;
+    color: #f9ee98 !important;
   }
 
+  /* storage */
   .pl-s1 {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
+  /* string */
   .pl-s2 {
-    color: #c5c8c6 !important;
+    color: #ccc !important;
   }
 
+  /* source */
   .pl-mp .pl-s3 {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* support */
   .pl-s3 {
-    color: #81a2be !important;
+    color: #dad085 !important;
   }
 
+  /* support */
   .pl-sc {
-    color: #c5c8c6 !important;
+    color: #dad085 !important;
   }
 
+  /* support.class */
   .pl-scp {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* support.constant.property-value */
   .pl-sf {
-    color: #DAD085 !important;
+    color: #dad085 !important;
   }
 
+  /* support.function */
   .pl-smc {
-    color: #F0C674 !important;
+    color: #ac885b !important;
   }
 
+  /* storage.modifier.c */
   .pl-smi {
-    color: #c5c8c6 !important;
+    color: #ccc !important;
   }
 
+  /* storage.modifier.import */
   .pl-smp {
-    color: #c5c8c6 !important;
+    color: #ccc !important;
   }
 
+  /* storage.modifier.package */
   .pl-sok {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* support.other.keyword */
   .pl-sol {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
+  /* string.other.link */
   .pl-som {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* support.other.module */
   .pl-sr {
-    color: #C66 !important;
+    color: #7587a6 !important;
   }
 
+  /* string.regexp */
   .pl-sra {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* string.regexp string.regexp.arbitrary-repetition */
   .pl-src {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* string.regexp.character-class */
   .pl-sre {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* string.regexp source.ruby.embedded */
   .pl-st {
-    color: #B294BB !important;
+    color: #cda869 !important;
   }
 
+  /* support.type */
   .pl-stj {
-    color: #c5c8c6 !important;
+    color: #7587a6 !important;
   }
 
+  /* storage.type.java */
   .pl-stp {
-    color: #DE935F !important;
+    color: #9b859d !important;
   }
 
+  /* support.type.property-name */
   .pl-sv {
-    color: #DE935F !important;
+    color: #9b859d !important;
   }
 
+  /* support.variable */
   .pl-v {
-    color: #DE935F !important;
+    color: #9b859d !important;
   }
 
+  /* variable */
   .pl-vi {
-    color: #DE935F !important;
+    color: #cf6a4c !important;
   }
 
+  /* variable.interpolation */
   .pl-vo {
-    color: #C66 !important;
+    color: #ac885b !important;
   }
 
+  /* */
   .pl-vpf {
-    color: #DE935F !important;
+    color: #7587a6 !important;
   }
 
+  /* variable.parameter.function */
+
+  /* Diff - Example: https://gist.github.com/silverwind/904159f1e71e2e626375 */
   .pl-mi1 {
-    color: #8F9D6A !important;
-    background: rgba(0, 64, 0, .5) !important;
+    color: #55a532 !important;
+    background: #020 !important;
   }
 
+  /* markup.inserted */
   .pl-mdht {
-    color: #8F9D6A !important;
-    background: rgba(0, 64, 0, .5) !important;
+    color: #55a532 !important;
+    background: #020 !important;
   }
 
+  /* meta.diff.header.to-file */
   .pl-md {
-    color: #C66 !important;
-    background: rgba(64, 0, 0, .5) !important;
+    color: #bd2c00 !important;
+    background: #200 !important;
   }
 
+  /* markup.deleted */
   .pl-mdhf {
-    color: #C66 !important;
-    background: rgba(64, 0, 0, .5) !important;
+    color: #bd2c00 !important;
+    background: #200 !important;
   }
 
+  /* meta.diff.header.from-file */
   .pl-mdr {
-    color: #DE935F !important;
-    font-weight: 400 !important;
+    color: #cf6a4c !important;
+    font-weight: normal !important;
   }
 
+  /* meta.diff.range */
   .pl-mdh {
-    color: #C66 !important;
-    font-weight: 400 !important;
+    color: #7587a6 !important;
+    font-weight: normal !important;
   }
 
+  /* meta.diff.header */
   .pl-mdi {
-    color: #C66 !important;
-    font-weight: 400 !important;
+    color: #7587a6 !important;
+    font-weight: normal !important;
   }
 
+  /* meta.diff.index */
+
+  /* TODO: Fix unstyled classes below */
   .pl-ib {
-    background-color: #C66 !important;
+    background-color: #f93 !important;
   }
 
+  /* invalid.broken */
   .pl-id {
-    background-color: #C66 !important;
+    background-color: #a31515 !important;
     color: #fff !important;
   }
 
+  /* invalid.deprecated */
   .pl-ii {
-    background-color: #C66 !important;
+    background-color: #df5000 !important;
     color: #fff !important;
   }
 
+  /* invalid.illegal */
   .pl-iu {
-    background-color: #C66 !important;
+    background-color: #b4b7b4 !important;
   }
 
+  /* invalid.unimplemented */
   .pl-mo {
-    color: #c5c8c6 !important;
+    color: #969896 !important;
   }
 
+  /* meta.output */
   .pl-mri {
-    color: #DE935F !important;
+    color: #008080 !important;
   }
 
+  /* markup.raw.inline */
   .pl-ms1 {
-    background-color: #c5c8c6 !important;
+    background-color: #f5f5f5 !important;
   }
 
+  /* meta.separator */
   .pl-va {
-    color: #DE935F !important;
+    color: #008080 !important;
   }
 
+  /* variable.assignment */
   .pl-vpu {
-    color: #DE935F !important;
+    color: #008080 !important;
   }
 
+  /* variable.parameter.url */
   .pl-entl {
-    color: #c5c8c6 !important;
+    color: #ccc !important;
   }
 
+  /* entity.name.tag.label */
+
+  /*! twilight */
   .ace_editor .ace_gutter {
-    background: #25282c !important;
-    color: #C5C8C6 !important;
+    background: #232323 !important;
+    color: #e2e2e2 !important;
   }
 
   .ace_editor .ace_print-margin {
     width: 1px !important;
-    background: #25282c !important;
+    background: #232323 !important;
   }
 
   .ace_editor .ace_cursor {
-    color: #AEAFAD !important;
+    color: #a7a7a7 !important;
   }
 
   .ace_editor .ace_marker-layer .ace_selection {
-    background: #373B41 !important;
+    background: rgba(221, 240, 255, .2) !important;
   }
 
   .ace_editor.ace_multiselect .ace_selection.ace_start {
-    box-shadow: 0 0 3px 0 #1D1F21 !important;
+    box-shadow: 0 0 3px 0 #141414 !important;
     border-radius: 2px !important;
   }
 
@@ -4707,361 +4975,420 @@
 
   .ace_editor .ace_marker-layer .ace_bracket {
     margin: -1px 0 0 -1px !important;
-    border: 1px solid #4B4E55 !important;
+    border: 1px solid rgba(255, 255, 255, .25) !important;
   }
 
   .ace_editor .ace_marker-layer .ace_active-line {
-    background: #282A2E !important;
+    background: rgba(255, 255, 255, .031) !important;
   }
 
   .ace_editor .ace_gutter-active-line {
-    background-color: #282A2E !important;
+    background-color: rgba(255, 255, 255, .031) !important;
   }
 
-  .ace_editor .ace_marker-layer .ace_selected-word {
-    border: 1px solid #373B41 !important;
+  .ace_editor .ace_identifier {
+    color: #7587a6 !important;
   }
 
   .ace_editor .ace_invisible {
-    color: #4B4E55 !important;
+    color: rgba(255, 255, 255, .25) !important;
   }
 
   .ace_editor .ace_keyword,
-  .ace_editor .ace_meta,
-  .ace_editor .ace_storage,
-  .ace_editor .ace_storage.ace_type,
-  .ace_editor .ace_support.ace_type {
-    color: #B294BB !important;
+  .ace_editor .ace_meta {
+    color: #cda869 !important;
   }
 
-  .ace_editor .ace_keyword.ace_operator {
-    color: #8ABEB7 !important;
-  }
-
+  .ace_editor .ace_constant,
   .ace_editor .ace_constant.ace_character,
-  .ace_editor .ace_constant.ace_language,
-  .ace_editor .ace_constant.ace_numeric,
-  .ace_editor .ace_keyword.ace_other.ace_unit,
-  .ace_editor .ace_support.ace_constant,
-  .ace_editor .ace_variable.ace_parameter {
-    color: #DE935F !important;
+  .ace_editor .ace_constant.ace_character.ace_escape,
+  .ace_editor .ace_constant.ace_other,
+  .ace_editor .ace_heading,
+  .ace_editor .ace_markup.ace_heading,
+  .ace_editor .ace_support.ace_constant {
+    color: #cf6a4c !important;
   }
 
-  .ace_editor .ace_constant.ace_other {
-    color: #CED1CF !important;
-  }
-
-  .ace_editor .ace_invalid {
-    color: #CED2CF !important;
-    background-color: #DF5F5F !important;
+  .ace_editor .ace_invalid.ace_illegal {
+    color: #f8f8f8 !important;
+    background-color: rgba(86, 45, 86, .75) !important;
   }
 
   .ace_editor .ace_invalid.ace_deprecated {
-    color: #CED2CF !important;
-    background-color: #B798BF !important;
+    text-decoration: underline !important;
+    font-style: italic !important;
+    color: #d2a8a1 !important;
+  }
+
+  .ace_editor .ace_support {
+    color: #9b859d !important;
   }
 
   .ace_editor .ace_fold {
-    background-color: #81A2BE !important;
-    border-color: #C5C8C6 !important;
+    background-color: #ac885b !important;
+    border-color: #f8f8f8 !important;
+  }
+
+  .ace_editor .ace_support.ace_function {
+    color: #dad085 !important;
+  }
+
+  .ace_editor .ace_support.ace_type {
+    color: #cda869 !important;
+  }
+
+  .ace_editor .ace_list,
+  .ace_editor .ace_markup.ace_list,
+  .ace_editor .ace_storage {
+    color: #f9ee98 !important;
   }
 
   .ace_editor .ace_entity.ace_name.ace_function,
-  .ace_editor .ace_support.ace_function,
-  .ace_editor .ace_variable {
-    color: #81A2BE !important;
+  .ace_editor .ace_meta.ace_tag {
+    color: #cda869 !important;
   }
 
-  .ace_editor .ace_support.ace_class,
-  .ace_editor .ace_support.ace_type {
-    color: #F0C674 !important;
+  .ace_editor .ace_entity.ace_other.ace_attribute-name {
+    color: #ac885b !important;
   }
 
-  .ace_editor .ace_heading,
-  .ace_editor .ace_markup.ace_heading,
+  /* html attribute name */
   .ace_editor .ace_string {
-    color: #B5BD68 !important;
+    color: #8f9d6a !important;
   }
 
-  .ace_editor .ace_entity.ace_name.ace_tag,
-  .ace_editor .ace_entity.ace_other.ace_attribute-name,
-  .ace_editor .ace_meta.ace_tag,
-  .ace_editor .ace_string.ace_regexp,
-  .ace_editor .ace_variable {
-    color: #C66 !important;
+  .ace_editor .ace_string.ace_regexp {
+    color: #e9c062 !important;
   }
 
   .ace_editor .ace_comment {
-    color: #969896 !important;
+    font-style: italic !important;
+    color: #5f5a60 !important;
+  }
+
+  .ace_editor .ace_variable {
+    color: #7587a6 !important;
+  }
+
+  .ace_editor .ace_variable.ace_language {
+    color: #9b859d !important;
+  }
+
+  .ace_editor .ace_xml-pe {
+    color: #494949 !important;
   }
 
   .ace_editor .ace_indent-guide {
-    background: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWNgYGBgYHB3d/8PAAOIAdULw8qMAAAAAElFTkSuQmCC") right repeat-y !important;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWMQERFpYLC1tf0PAAgOAnPnhxyiAAAAAElFTkSuQmCC") right repeat-y !important;
   }
 
-  /*! tomorrow night; https://github.com/MozMorris/tomorrow-pygments */
+  /* Jupyter Notebooks */
+
+  /*! Twilight; https://gist.github.com/dansimpson/803005 */
   #notebook .highlight table {
-    background: #1d1f21 !important;
-    color: #c5c8c6 !important;
+    background: #181818 !important;
+    color: #f8f8f8 !important;
   }
 
-  #notebook .highlight .hll {
-    background-color: #373b41 !important;
+  #notebook .highlight *,
+  .api .highlight * {
+    color: #f8f8f8 !important;
   }
 
-  #notebook .highlight .c {
-    color: #969896 !important;
+  .highlight .hll {
+    background-color: #ffffcc !important;
   }
 
-  #notebook .highlight .err {
-    color: #c66 !important;
-  }
-
-  #notebook .highlight .k {
-    color: #b294bb !important;
-  }
-
-  #notebook .highlight .l {
-    color: #de935f !important;
-  }
-
-  #notebook .highlight .h,
-  #notebook .highlight .n {
-    color: #c5c8c6 !important;
-  }
-
-  #notebook .highlight .o {
-    color: #8abeb7 !important;
-  }
-
-  #notebook .highlight .p {
-    color: #c5c8c6 !important;
-  }
-
-  #notebook .highlight .cm {
-    color: #969896 !important;
-  }
-
-  #notebook .highlight .cp {
-    color: #969896 !important;
-  }
-
-  #notebook .highlight .c1 {
-    color: #969896 !important;
-  }
-
-  #notebook .highlight .cs {
-    color: #969896 !important;
-  }
-
-  #notebook .highlight .gd {
-    color: #c66 !important;
-  }
-
-  #notebook .highlight .ge {
+  .highlight .c {
+    color: #5f5a60 !important;
     font-style: italic !important;
   }
 
-  #notebook .highlight .gh {
-    color: #c5c8c6 !important;
-    font-weight: 700 !important;
+  /* Comment */
+  .highlight .err {
+    border: #b22518 !important;
   }
 
-  #notebook .highlight .gi {
-    color: #b5bd68 !important;
+  /* Error */
+  .highlight .k {
+    color: #cda869 !important;
   }
 
-  #notebook .highlight .gp {
-    color: #969896 !important;
-    font-weight: 700 !important;
+  /* Keyword */
+  .highlight .cm {
+    color: #5f5a60 !important;
+    font-style: italic !important;
   }
 
-  #notebook .highlight .gs {
-    font-weight: 700 !important;
+  /* Comment.Multiline */
+  .highlight .cp {
+    color: #5f5a60 !important;
   }
 
-  #notebook .highlight .gu {
-    color: #8abeb7 !important;
-    font-weight: 700 !important;
+  /* Comment.Preproc */
+  .highlight .c1 {
+    color: #5f5a60 !important;
+    font-style: italic !important;
   }
 
-  #notebook .highlight .kc {
-    color: #b294bb !important;
+  /* Comment.Single */
+  .highlight .cs {
+    color: #5f5a60 !important;
+    font-style: italic !important;
   }
 
-  #notebook .highlight .kd {
-    color: #b294bb !important;
+  /* Comment.Special */
+  .highlight .gd {
+    background: #420e09 !important;
   }
 
-  #notebook .highlight .kn {
-    color: #8abeb7 !important;
+  /* Generic.Deleted */
+  .highlight .ge {
+    font-style: italic !important;
   }
 
-  #notebook .highlight .kp {
-    color: #b294bb !important;
+  /* Generic.Emph */
+  .highlight .gr {
+    background: #b22518 !important;
   }
 
-  #notebook .highlight .kr {
-    color: #b294bb !important;
+  /* Generic.Error */
+  .highlight .gh {
+    color: #000080 !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .kt {
-    color: #f0c674 !important;
+  /* Generic.Heading */
+  .highlight .gi {
+    background: #253b22 !important;
   }
 
-  #notebook .highlight .ld {
-    color: #b5bd68 !important;
+  /* Generic.Inserted */
+  .highlight .go {
   }
 
-  #notebook .highlight .m {
-    color: #de935f !important;
+  /* Generic.Output */
+  .highlight .gp {
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .s {
-    color: #b5bd68 !important;
+  /* Generic.Prompt */
+  .highlight .gs {
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .na {
-    color: #81a2be !important;
+  /* Generic.Strong */
+  .highlight .gu {
+    color: #800080 !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .nb {
-    color: #c5c8c6 !important;
+  /* Generic.Subheading */
+  .highlight .gt {
   }
 
-  #notebook .highlight .nc {
-    color: #f0c674 !important;
+  /* Generic.Traceback */
+  .highlight .kc {
   }
 
-  #notebook .highlight .no {
-    color: #c66 !important;
+  /* Keyword.Constant */
+  .highlight .kd {
+    color: #e9df8f !important;
   }
 
-  #notebook .highlight .nd {
-    color: #8abeb7 !important;
+  /* Keyword.Declaration */
+  .highlight .kn {
   }
 
-  #notebook .highlight .ni {
-    color: #c5c8c6 !important;
+  /* Keyword.Namespace */
+  .highlight .kp {
+    color: #9b703f !important;
   }
 
-  #notebook .highlight .ne {
-    color: #c66 !important;
+  /* Keyword.Pseudo */
+  .highlight .kr {
   }
 
-  #notebook .highlight .nf {
-    color: #81a2be !important;
+  /* Keyword.Reserved */
+  .highlight .kt {
   }
 
-  #notebook .highlight .nl {
-    color: #c5c8c6 !important;
+  /* Keyword.Type */
+  .highlight .m {
   }
 
-  #notebook .highlight .nn {
-    color: #f0c674 !important;
+  /* Literal.Number */
+  .highlight .s {
   }
 
-  #notebook .highlight .nx {
-    color: #81a2be !important;
+  /* Literal.String */
+  .highlight .na {
+    color: #f9ee98 !important;
   }
 
-  #notebook .highlight .py {
-    color: #c5c8c6 !important;
+  /* Name.Attribute */
+  .highlight .nb {
+    color: #cda869 !important;
   }
 
-  #notebook .highlight .nt {
-    color: #8abeb7 !important;
+  /* Name.Builtin */
+  .highlight .nc {
+    color: #9b859d !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .nv {
-    color: #c66 !important;
+  /* Name.Class */
+  .highlight .no {
+    color: #9b859d !important;
   }
 
-  #notebook .highlight .ow {
-    color: #8abeb7 !important;
+  /* Name.Constant */
+  .highlight .nd {
+    color: #7587a6 !important;
   }
 
-  #notebook .highlight .w {
-    color: #c5c8c6 !important;
+  /* Name.Decorator */
+  .highlight .ni {
+    color: #cf6a4c !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .mf {
-    color: #de935f !important;
+  /* Name.Entity */
+  .highlight .nf {
+    color: #9b703f !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .mh {
-    color: #de935f !important;
+  /* Name.Function */
+  .highlight .nn {
+    color: #9b859d !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .mi {
-    color: #de935f !important;
+  /* Name.Namespace */
+  .highlight .nt {
+    color: #cda869 !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .mo {
-    color: #de935f !important;
+  /* Name.Tag */
+  .highlight .nv {
+    color: #7587a6 !important;
   }
 
-  #notebook .highlight .sb {
-    color: #b5bd68 !important;
+  /* Name.Variable */
+  .highlight .ow {
+    color: #aa22ff !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .sc {
-    color: #c5c8c6 !important;
+  /* Operator.Word */
+  .highlight .w {
+    color: #141414 !important;
   }
 
-  #notebook .highlight .sd {
-    color: #969896 !important;
+  /* Text.Whitespace */
+  .highlight .mf {
+    color: #cf6a4c !important;
   }
 
-  #notebook .highlight .s2 {
-    color: #b5bd68 !important;
+  /* Literal.Number.Float */
+  .highlight .mh {
+    color: #cf6a4c !important;
   }
 
-  #notebook .highlight .se {
-    color: #de935f !important;
+  /* Literal.Number.Hex */
+  .highlight .mi {
+    color: #cf6a4c !important;
   }
 
-  #notebook .highlight .sh {
-    color: #b5bd68 !important;
+  /* Literal.Number.Integer */
+  .highlight .mo {
+    color: #cf6a4c !important;
   }
 
-  #notebook .highlight .si {
-    color: #de935f !important;
+  /* Literal.Number.Oct */
+  .highlight .sb {
+    color: #8f9d6a !important;
   }
 
-  #notebook .highlight .sx {
-    color: #b5bd68 !important;
+  /* Literal.String.Backtick */
+  .highlight .sc {
+    color: #8f9d6a !important;
   }
 
-  #notebook .highlight .sr {
-    color: #b5bd68 !important;
+  /* Literal.String.Char */
+  .highlight .sd {
+    color: #8f9d6a !important;
+    font-style: italic !important;
   }
 
-  #notebook .highlight .s1 {
-    color: #b5bd68 !important;
+  /* Literal.String.Doc */
+  .highlight .s2 {
+    color: #8f9d6a !important;
   }
 
-  #notebook .highlight .ss {
-    color: #b5bd68 !important;
+  /* Literal.String.Double */
+  .highlight .se {
+    color: #f9ee98 !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .bp {
-    color: #c5c8c6 !important;
+  /* Literal.String.Escape */
+  .highlight .sh {
+    color: #8f9d6a !important;
   }
 
-  #notebook .highlight .vc {
-    color: #c66 !important;
+  /* Literal.String.Heredoc */
+  .highlight .si {
+    color: #daefa3 !important;
+    font-weight: bold !important;
   }
 
-  #notebook .highlight .vg {
-    color: #c66 !important;
+  /* Literal.String.Interpol */
+  .highlight .sx {
+    color: #8f9d6a !important;
   }
 
-  #notebook .highlight .vi {
-    color: #c66 !important;
+  /* Literal.String.Other */
+  .highlight .sr {
+    color: #e9c062 !important;
   }
 
-  #notebook .highlight .il {
-    color: #de935f !important;
+  /* Literal.String.Regex */
+  .highlight .s1 {
+    color: #8f9d6a !important;
   }
+
+  /* Literal.String.Single */
+  .highlight .ss {
+    color: #cf6a4c !important;
+  }
+
+  /* Literal.String.Symbol */
+  .highlight .bp {
+    color: #00aaaa !important;
+  }
+
+  /* Name.Builtin.Pseudo */
+  .highlight .vc {
+    color: #7587a6 !important;
+  }
+
+  /* Name.Variable.Class */
+  .highlight .vg {
+    color: #7587a6 !important;
+  }
+
+  /* Name.Variable.Global */
+  .highlight .vi {
+    color: #7587a6 !important;
+  }
+
+  /* Name.Variable.Instance */
+  .highlight .il {
+    color: #009999 !important;
+  }
+
+  /* Literal.Number.Integer.Long */
 }
