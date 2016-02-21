@@ -17,6 +17,10 @@ Originally from [StylishThemes - GitHub Dark](https://userstyles.org/styles/3703
 
 Thus far, unmodified except for passing it through cssfmt.
 
+### facebook
+
+Super minimal style, just hides the right-bar and makes the center full-width to use up the blank space created there.
+
 ## Adding a style
 
 Create a css file and run `make` to format it with [cssfmt](https://github.com/morishitter/cssfmt). You'll need to have cssfmt installed, which you can do with `npm install -g cssfmt`.
