@@ -1,9 +1,0 @@
-@-moz-document domain("www.facebook.com") {
-  html ._5vb_._5vb_.hasLeftCol .hasRightCol div#contentArea {
-    width: 100%;
-  }
-
-  html ._5vb_.hasLeftCol ._5r-_ div#rightCol {
-    display: none;
-  }
-}
