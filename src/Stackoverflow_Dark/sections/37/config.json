@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [
-    "superuser.com"
+  "domains": [],
+  "regexps": [
+    "^https?://((android|photo|programmers|wordpress)\\.)?stackexchange\\.com.*"
   ],
-  "regexps": [],
   "code": ""
 }

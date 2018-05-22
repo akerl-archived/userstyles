@@ -1,6 +1,10 @@
-/* pt.stackoverflow.com (Portuguese) */
-  .-logo .-img:not(._glyph) {
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-stackoverflow-logo.svg) !important;
+/* serverfault.com */
+  #hlogo a {
     background-size: cover !important;
-    height: 60px !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg) !important;
+  }
+  .container .answered, .container .answered-accepted {
+    border: 2px transparent !important;
+    padding: 5px 5px 6px !important;
+    height: 38px !important;
   }

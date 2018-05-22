@@ -1,10 +1,5 @@
-/* serverfault.com */
-  #hlogo a {
-    background-size: cover !important;
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/serverfault-logo.svg) !important;
-  }
-  .container .answered, .container .answered-accepted {
-    border: 2px transparent !important;
-    padding: 5px 5px 6px !important;
-    height: 38px !important;
+#hlogo a {
+    height: 60px !important;
+    background-size: contain !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/meta-superuser-logo.svg) !important;
   }

@@ -2,7 +2,8 @@
   "urls": [],
   "urlPrefixes": [],
   "domains": [
-    "graphicdesign.stackexchange.com"
+    "portuguese.meta.stackexchange.com",
+    "portuguese.stackexchange.com"
   ],
   "regexps": [],
   "code": ""

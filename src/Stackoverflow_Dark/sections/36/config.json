@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [],
-  "regexps": [
-    "^https?://stackexchange\\.com.*"
+  "domains": [
+    "data.stackexchange.com"
   ],
+  "regexps": [],
   "code": ""
 }

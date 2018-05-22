@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [
-    "ru.meta.stackoverflow.com"
+  "domains": [],
+  "regexps": [
+    "^https?://stackexchange\\.com.*"
   ],
-  "regexps": [],
   "code": ""
 }

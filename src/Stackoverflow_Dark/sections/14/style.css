@@ -1,4 +1,4 @@
-/* electrical engineering */
-  .nav li, .nav li a, .nav li a:hover, .nav li.youarehere a, .answered-accepted .mini-counts {
-    background-color: transparent !important;
+/* mathoverflow.net */
+  #hlogo a {
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/mathoverflow-logo.png) !important;
   }

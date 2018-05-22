@@ -1,9 +1,9 @@
 {
   "urls": [],
-  "urlPrefixes": [
-    "https://meta.stackexchange.com"
+  "urlPrefixes": [],
+  "domains": [
+    "tex.stackexchange.com"
   ],
-  "domains": [],
   "regexps": [],
   "code": ""
 }

@@ -1,7 +1,5 @@
-#hlogo a {
-    text-indent: -9999px !important;
-  }
-  #footer {
-    background-color: #182030 !important;
-    background-image: url("https://meta.stackexchange.com/content/Sites/stackexchangemeta/img/icon-cloud-footer.png?v=ac80a4525ace") !important;
+/* target sites that need an inverted header */
+  #header, #header > * {
+    -webkit-filter: invert(100%) !important;
+    filter: invert(100%) !important;
   }

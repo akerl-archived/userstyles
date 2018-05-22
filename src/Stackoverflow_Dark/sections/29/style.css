@@ -1,4 +1,5 @@
-/* ru.stackoverflow.com (Russian) */
-  .-logo .-img:not(._glyph) {
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
+/* stackapps.com */
+  #hlogo a {
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/stackapps-logo.png) !important;
+    background-size: contain !important;
   }

@@ -1,22 +1,6 @@
-#header {
-    background-image: none !important;
-  }
-  .narrow div.votes, .answered-accepted .mini-counts {
-    background-color: transparent !important;
-  }
-  #custom-header .nav-global, #custom-header .nav-global ul, .topbar {
-    background-color: #000 !important;
-  }
-  #custom-header .more.open, .topbar .profile-me:hover, .topbar a:hover, .topbar-icon:hover, #hmenus, .nav li, .nav a {
-    background-color: #111 !important;
-  }
-  #custom-header .nav-global a {
-    border-top-color: transparent !important;
-  }
-  #custom-header .nav-global a.active {
-    color: #eee !important;
-    border-top-color: #eee !important;
-  }
-  .nav li.youarehere, .nav li:hover {
-    background-color: #4183C4 !important;
+/* ja.stackoverflow.com (Japanese) */
+  .-logo .-img:not(._glyph) {
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ja-stackoverflow-logo.svg) !important;
+    background-size: contain !important;
+    height: 60px !important;
   }

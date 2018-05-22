@@ -1,4 +1,17 @@
-/* mathoverflow.net */
-  #hlogo a {
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/mathoverflow-logo.png) !important;
+#content, #hmenus, #mainbar .subheader, .mainbar .subheader,
+  #footer .footerwrap {
+    background-image: none !important;
+  }
+  #hlogo {
+    left: 25px !important;
+  }
+  .nav li a {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+  }
+  #nav-askquestion {
+    text-indent: 10px !important;
+  }
+  a[class*="vote-"]:hover {
+    background-color: transparent !important;
   }

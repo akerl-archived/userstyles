@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [
-    "dba.stackexchange.com"
+  "domains": [],
+  "regexps": [
+    "^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*"
   ],
-  "regexps": [],
   "code": ""
 }

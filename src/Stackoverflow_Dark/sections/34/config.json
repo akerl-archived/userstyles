@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [
-    "softwareengineering.stackexchange.com"
+  "domains": [],
+  "regexps": [
+    "^https?://((academia|chess|english|meta|movies|salesforce|skeptics|judaism|ux)\\.)?stackexchange\\.com.*"
   ],
-  "regexps": [],
   "code": ""
 }

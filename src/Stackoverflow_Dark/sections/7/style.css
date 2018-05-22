@@ -1,4 +1,4 @@
-/* hide top nav background on <li>, style is on <a> */
-  .nav li {
-    background-color: transparent !important;
+/* english language & usage */
+  .post-signature.owner {
+    background-image: none !important;
   }

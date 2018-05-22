@@ -1,17 +1,26 @@
-#content, #hmenus, #mainbar .subheader, .mainbar .subheader,
-  #footer .footerwrap {
-    background-image: none !important;
+/* softwareengineering.stackexchange.com specific tweaks */
+  /* menu & section underline extensions (wrong color) */
+  #hmenus .nav ul li a, #hmenus .nav ul li a:hover {
+    /* display: none !important; */
+    border-bottom-color: #db2424 !important;
   }
-  #hlogo {
-    left: 25px !important;
+  #header {
+    border-bottom-color: #2b2b2b !important;
   }
-  .nav li a {
-    margin: 0 !important;
-    padding: 10px 20px !important;
+  .subheader:before, .subheader:after {
+    background: transparent !important;
   }
-  #nav-askquestion {
-    text-indent: 10px !important;
-  }
-  a[class*="vote-"]:hover {
+  /* target sites that don't need a menu background color */
+  .nav li, .nav a, .nav li.youarehere a, .nav a:hover {
     background-color: transparent !important;
+  }
+  .vote-up-off:not(.vote-up-on), .vote-down-off:not(.vote-down-on),
+  .star-off:not(.star-on) {
+    background-color: transparent !important;
+    filter: invert(100%) !important;
+  }
+  a.vote-up-off:hover, a.vote-down-off:hover,
+  a.vote-up-on:hover, a.vote-down-on:hover {
+    background-color: transparent !important;
+    filter: brightness(200%) !important;
   }

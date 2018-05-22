@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [],
-  "regexps": [
-    "^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*"
+  "domains": [
+    "english.stackexchange.com"
   ],
+  "regexps": [],
   "code": ""
 }

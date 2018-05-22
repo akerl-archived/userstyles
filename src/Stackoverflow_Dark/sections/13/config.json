@@ -1,9 +1,9 @@
 {
   "urls": [],
-  "urlPrefixes": [
-    "https://stackoverflow.com/documentation"
+  "urlPrefixes": [],
+  "domains": [
+    "ja.meta.stackoverflow.com"
   ],
-  "domains": [],
   "regexps": [],
   "code": ""
 }

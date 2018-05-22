@@ -1,6 +1,14 @@
-/* pt.meta.stackoverflow.com (Portuguese) */
-  .-logo .-img:not(._glyph) {
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/pt-meta-stackoverflow-logo.svg) !important;
-    background-size: contain !important;
+#hlogo a {
     height: 60px !important;
+    background-size: contain !important;
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/skeptics-logo.svg) !important;
+  }
+  #hmenus .nav li a {
+    border: none !important;
+    margin-top: 40px !important;
+  }
+  #hmenus .nav ul li:before {
+    mix-blend-mode: initial !important;
+    color: #999 !important;
+    left: 3px !important;
   }

@@ -1,9 +1,9 @@
 {
   "urls": [],
   "urlPrefixes": [],
-  "domains": [
-    "travel.stackexchange.com"
+  "domains": [],
+  "regexps": [
+    "^https?://((android|apple|dba|drupal|gis|mathematica|photo|scifi|security|tex|wordpress)\\.)?stackexchange\\.com.*"
   ],
-  "regexps": [],
   "code": ""
 }

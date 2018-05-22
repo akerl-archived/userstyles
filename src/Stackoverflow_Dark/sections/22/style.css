@@ -1,10 +1,4 @@
-/* meta.stackoverflow.com */
-  #hlogo a {
-    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/meta-stackoverflow-logo.svg) !important;
-  }
-  #sidebar .community-bulletin .bulletin-item-content a, #sidebar .community-bulletin .bulletin-item-content a:hover {
-    color: #4183C4 !important;
-  }
-  #sidebar .community-bulletin .bulletin-item-content a:hover {
-    color: #fff !important;
+/* ru.stackoverflow.com (Russian) */
+  .-logo .-img:not(._glyph) {
+    background-image: url(https://StylishThemes.github.io/StackOverflow-Dark/images/ru-stackoverflow-logo.svg) !important;
   }

@@ -1,5 +1,4 @@
-/* nav manu text coloring only */
-  .nav li.youarehere a, .nav li a:hover {
+/* electrical engineering */
+  .nav li, .nav li a, .nav li a:hover, .nav li.youarehere a, .answered-accepted .mini-counts {
     background-color: transparent !important;
-    color: #4183C4 !important;
   }
