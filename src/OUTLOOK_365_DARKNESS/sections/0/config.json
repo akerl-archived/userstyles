@@ -1,0 +1,11 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [
+    "outlook.office365.com",
+    "office.com",
+    "office365.com"
+  ],
+  "regexps": [],
+  "code": ""
+}

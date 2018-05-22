@@ -1,0 +1,12 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [
+    "githubusercontent.com",
+    "graphql-explorer.githubapp.com"
+  ],
+  "regexps": [
+    "^https?://((blog|gist|guides|help|raw|resources|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$"
+  ],
+  "code": ""
+}

@@ -1,0 +1,18 @@
+html,
+body {
+    background: #252C33;
+}
+.o365-theme-base h1,
+.o365-theme-base h3,
+.o365-theme-base h4,
+.o365-theme-base h5,
+.o365-theme-base h6 {
+    color: whitesmoke;
+}
+.Shell-Body {
+    background-color: #252C33;
+    color: whitesmoke;
+}
+.Shell-Footer {
+    background-color: #252C33;
+}

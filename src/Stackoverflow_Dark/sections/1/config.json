@@ -1,0 +1,9 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [],
+  "regexps": [
+    "^https?://((?!(www|area51|gaming)).*\\.)?stackexchange.com.*"
+  ],
+  "code": ""
+}

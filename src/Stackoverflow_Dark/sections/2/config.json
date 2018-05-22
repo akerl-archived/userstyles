@@ -1,0 +1,9 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [],
+  "regexps": [
+    "^https?://((?!(academia|dba|electronics|meta|tex)).*\\.)?stackexchange.com.*"
+  ],
+  "code": ""
+}

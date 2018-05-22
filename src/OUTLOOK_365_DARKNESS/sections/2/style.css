@@ -1,0 +1,22 @@
+.login_panel {
+    background: #14171A;
+    color: whitesmoke;
+    border-left: none !important;
+    ;
+}
+input.login_textfield {
+    background: black;
+    color: whitesmoke;
+}
+a.tile_link .bigtext {
+    color: whitesmoke;
+}
+a.tile_link:hover .bigtext {
+    color: whitesmoke;
+}
+.smallertext {
+    color: whitesmoke;
+}
+table.user_tile:hover {
+    background: #252C33 none repeat scroll 0% 0%;
+}

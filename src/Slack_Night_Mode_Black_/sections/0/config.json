@@ -1,0 +1,9 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [],
+  "regexps": [
+    "https://[^./]*\\.slack\\.com/(?!pricing)(?!security).*"
+  ],
+  "code": ""
+}

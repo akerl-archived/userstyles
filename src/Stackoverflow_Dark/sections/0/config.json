@@ -1,0 +1,16 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [
+    "serverfault.com",
+    "superuser.com",
+    "stackapps.com",
+    "mathoverflow.net",
+    "askubuntu.com"
+  ],
+  "regexps": [
+    "^https?://((chat|meta|es|ja|pt|ru)\\.)*stackoverflow\\.com.*",
+    "^https?://((?!(www|area51|gaming)).*\\.)?stackexchange\\.com.*"
+  ],
+  "code": ""
+}

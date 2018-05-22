@@ -1,0 +1,9 @@
+{
+  "urls": [],
+  "urlPrefixes": [],
+  "domains": [
+    "login.microsoftonline.com"
+  ],
+  "regexps": [],
+  "code": ""
+}
